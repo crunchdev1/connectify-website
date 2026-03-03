@@ -1,78 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Connectify – Official Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connectify - Official Website</title>
 
-  <style>
+<style>
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #4F46E5, #06B6D4);
-      color: white;
-      text-align: center;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0f172a;
+        color: white;
     }
 
-    .container {
-      padding: 60px 20px;
+    header {
+        background: #111827;
+        padding: 20px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    header img {
+        height: 50px;
     }
 
-    p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 20px auto;
-      line-height: 1.6;
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
     }
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background: white;
-      color: #4F46E5;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s ease;
+    .hero {
+        text-align: center;
+        padding: 100px 10%;
+        background: linear-gradient(135deg, #2563eb, #9333ea);
     }
 
-    .btn:hover {
-      background: #f0f0f0;
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding: 60px 10%;
+    }
+
+    .section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #1f2937;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      background: rgba(0,0,0,0.2);
-      font-size: 14px;
+        background: #111827;
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        font-size: 14px;
+        color: #9ca3af;
     }
-  </style>
+
+    a.button {
+        display: inline-block;
+        padding: 12px 25px;
+        background: white;
+        color: #111827;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Connectify</h1>
+<header>
+    <img src="logo.png" alt="App Logo">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Connectify</h1>
+    <p>Your smart and secure connectivity solution.</p>
+    <a class="button" href="#features">Explore Features</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Our App</h2>
     <p>
-      Connectify is a modern social networking platform designed to help people
-      connect, communicate, and build meaningful digital communities in a secure
-      and engaging environment.
+        Connectify is designed to provide fast, reliable, and seamless
+        connectivity solutions. Our mission is to simplify digital
+        communication and empower users with secure networking tools.
     </p>
+</section>
 
-    <a class="btn" href="privacy.html">Privacy Policy</a>
-    <a class="btn" href="terms.html">Terms of Service</a>
-    <a class="btn" href="mailto:support@connectify.com">Contact Support</a>
-  </div>
+<section id="features" class="section">
+    <h2>Key Features</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Fast Connection</h3>
+            <p>Optimized performance for stable and fast connectivity.</p>
+        </div>
+        <div class="card">
+            <h3>Secure Network</h3>
+            <p>Advanced security measures to protect user data.</p>
+        </div>
+        <div class="card">
+            <h3>User-Friendly Interface</h3>
+            <p>Simple and intuitive design for all users.</p>
+        </div>
+        <div class="card">
+            <h3>Reliable Performance</h3>
+            <p>Engineered to deliver consistent and dependable results.</p>
+        </div>
+    </div>
+</section>
 
-  <footer>
+<section id="privacy" class="section">
+    <h2>Privacy & Data Protection</h2>
+    <p>
+        We respect your privacy. Connectify collects only necessary
+        information to improve app functionality. We do not sell or
+        share personal data with third parties.
+    </p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: crunchdev1@gmail.com</p>
+    <p>Location: Philippines</p>
+</section>
+
+<footer>
     © 2026 Connectify. All Rights Reserved.
-  </footer>
+</footer>
 
 </body>
 </html>
