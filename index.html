@@ -9,8 +9,8 @@
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #2a72dd;
-        color: rgb(255, 255, 255);
+        background-color: #fafafa;
+        color: rgb(0, 0, 0);
     }
 
     header {
@@ -30,20 +30,15 @@
         text-decoration: none;
         margin-left: 20px;
         font-weight: 500;
-        border: 1px solid #050404;
-        padding: 5px;
-        border-radius: 10px;
-        background-color: #050404;
     }
     nav a:hover {
         color: #060606;
-        background-color: rgb(253, 249, 253);
     }
 
     .hero {
         text-align: center;
         padding: 100px 10%;
-        background: linear-gradient(135deg, #000000, #290ad5);
+        background: linear-gradient(135deg,  #290ad5, #000000);
     }
 
     .hero h1 {
@@ -67,10 +62,10 @@
     }
 
     .card {
-        background: #0f1139;
+        background: #646ae9;
         padding: 25px;
         border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     }
 
     footer {
@@ -94,9 +89,13 @@
     }
     a.button:hover {
         background: linear-gradient(135deg, #290ad5, #0eacd4);
-        color: #f4f4f4;
+        color: #000000;
         transform: scale(1.05);
 
+    }
+
+    h1, #intro{
+        color: #f4f4f4;
     }
 </style>
 </head>
@@ -115,7 +114,7 @@
 
 <section class="hero">
     <h1>Welcome to Connectify</h1>
-    <p>Your smart and secure connectivity solution.</p>
+    <p id="intro">Your smart and secure connectivity solution.</p>
     <a class="button" href="#features">Explore Features</a>
 </section>
 
@@ -146,6 +145,15 @@
         <div class="card">
             <h3>Reliable Performance</h3>
             <p>Engineered to deliver consistent and dependable results.</p>
+        </div>
+        <div class="card">
+            <h3>Real-Time Messaging</h3>
+            <p>Instantly send messages and stay connected with friends through fast and secure real-time communication.</p>
+        </div>
+
+        <div class="card">
+            <h3>Global Community</h3>
+            <p>Discover, connect, and interact with people around the world through posts, comments, and shared interests.</p>
         </div>
     </div>
 </section>
